@@ -7,6 +7,8 @@ This repository contains comprehensive implementations and evaluations of five a
 
 ### 1. FHO (Firefly-Harmony Optimization)
 A hybrid metaheuristic approach combining Firefly Algorithm's luminosity-based attraction mechanics with Harmony Search's improvisation strategies to optimize classifier parameters and feature selection. The implementation leverages dynamic control parameters that adjust through iterations to balance exploration and exploitation.
+<img src="https://www.researchgate.net/figure/Flowchart-of-the-firefly-algorithm_fig2_327536338" alt="Architecture Diagram" width="600">
+
 
 ### 2. FLD (Fisher's Linear Discriminant)
 A dimensionality reduction and classification technique that maximizes the ratio of between-class scatter to within-class scatter, projecting high-dimensional data onto a lower-dimensional space while preserving class separability through eigenvalue decomposition of scatter matrices.
