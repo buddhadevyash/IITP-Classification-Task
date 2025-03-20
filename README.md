@@ -125,7 +125,7 @@ pip install numpy pandas scikit-learn matplotlib seaborn imbalanced-learn
 
 ### Results Interpretation
 - **metrics.csv**: Contains comprehensive per-class and aggregate metrics
-- **confusion_matrices/**: Visual examination of classification errors
+- **confusion_matrices**: Visual examination of classification errors
 - **performance_metrics.png**: Comparative analysis across classifiers
 - **timing.csv**: Computational efficiency assessment
 
@@ -149,9 +149,6 @@ pip install numpy pandas scikit-learn matplotlib seaborn imbalanced-learn
 - Matplotlib 3.4.0+
 - Seaborn 0.11.0+
 - imbalanced-learn 0.8.0+
-
-## License
-[Specify your preferred license]
 
 ## Citation
 If you use this implementation in your research, please cite:
