@@ -1,4 +1,4 @@
-# ITP Classification Task: Multimodal Classification on Student and Network Traffic Data
+# IITP Classification Task: Multimodal Classification on Student and Network Traffic Data
 
 ## Project Overview
 This repository contains comprehensive implementations and evaluations of five advanced classification algorithms applied to multimodal datasets. The primary objective was to achieve high-accuracy classification on both student behavioral data (dataset-1) and network traffic patterns (dataset-2), with successfully obtained accuracy metrics ranging between 96-99% across algorithms.
