@@ -154,10 +154,10 @@ pip install numpy pandas scikit-learn matplotlib seaborn imbalanced-learn
 If you use this implementation in your research, please cite:
 ```
 @misc{itp-classification-task,
-  author = {Yash Buddhadev},
-  title = {Multimodal Classification on Student and Network Traffic Data},
-  year = {2025},
-  publisher = {buddhadevyash},
-  url = {https://github.com/buddhadevyash/iitp-classification-task}
+  author = Yash Buddhadev,
+  title = Multimodal Classification on Student and Network Traffic Data,
+  year = 2025,
+  publisher = buddhadevyash,
+  url = https://github.com/buddhadevyash/IITP-Classification-Task
 }
 ```
