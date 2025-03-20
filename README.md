@@ -7,18 +7,34 @@ This repository contains comprehensive implementations and evaluations of five a
 
 ### 1. FHO (Firefly-Harmony Optimization)
 A hybrid metaheuristic approach combining Firefly Algorithm's luminosity-based attraction mechanics with Harmony Search's improvisation strategies to optimize classifier parameters and feature selection. The implementation leverages dynamic control parameters that adjust through iterations to balance exploration and exploitation.
+Algorithm Architecture:
+<img src="https://www.mdpi.com/applsci/applsci-12-12275/article_deploy/html/images/applsci-12-12275-g001.png" width="700">
+
+
 
 ### 2. FLD (Fisher's Linear Discriminant)
 A dimensionality reduction and classification technique that maximizes the ratio of between-class scatter to within-class scatter, projecting high-dimensional data onto a lower-dimensional space while preserving class separability through eigenvalue decomposition of scatter matrices.
+Algorithm Architecture:
+<img src="https://www.mdpi.com/machines/machines-11-01066/article_deploy/html/images/machines-11-01066-g001.png" width="700">
+
 
 ### 3. FOFMOA (First-Order-Free Multi-Objective Algorithm)
 A multi-objective optimization approach that simultaneously optimizes classification accuracy, model complexity, and computational efficiency without requiring gradient information, using Pareto dominance principles to drive the search toward optimal classifier configurations.
+Algorithm Architecture:
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-023-37635-7/MediaObjects/41598_2023_37635_Fig1_HTML.png" width="700">
+
 
 ### 4. Fuzzy Logic
 Implementation of fuzzy rule-based classification system with adaptive membership functions. The approach utilizes linguistic variables and fuzzy inference systems to handle uncertainty and ambiguity in the feature space, with rule weights optimized through evolutionary algorithms.
+Algorithm Architecture:
+<img src="https://www.researchgate.net/publication/337511172/figure/fig1/AS:829304086724609@1574732910859/Architecture-of-fuzzy-logic-control.png" width="700">
+
 
 ### 5. Gaussian Process
 Probabilistic classification leveraging Gaussian Process priors with custom kernels optimized for each dataset's characteristics. This Bayesian approach provides uncertainty quantification alongside predictions, utilizing MCMC techniques for hyperparameter optimization.
+Algorithm Architecture:
+<img src="https://www.researchgate.net/publication/349155223/figure/fig3/AS:989596343091202@1612949562150/Schematic-of-train-and-test-procedure-of-the-Gaussian-process-algorithm-GPR.png" width="700">
+
 
 ## Dataset Specifications
 
