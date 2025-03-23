@@ -71,7 +71,7 @@ Each algorithm implementation follows an identical rigorous experimental protoco
 
 ## Repository Structure Details.
 ```
-itp-classification-task/
+iitp-classification-task/
 ├── algorithms/                           # Algorithm implementations
 │   ├── algorithm-1-fho/                  # Firefly-Harmony Optimization
 │   │   ├── fho-on-dataset-1/             # FHO applied to student data
