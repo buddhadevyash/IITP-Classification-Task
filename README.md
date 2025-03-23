@@ -161,7 +161,7 @@ pip install numpy pandas scikit-learn matplotlib seaborn imbalanced-learn networ
 ## Citation
 If you use this implementation in your research, please cite:
 ```
-@misc{itp-classification-task,
+@misc{iitp-classification-task,
   author = Yash Buddhadev,
   title = Multimodal Classification on Student and Network Traffic Data,
   year = 2025,
