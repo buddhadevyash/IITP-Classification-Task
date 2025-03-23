@@ -72,15 +72,31 @@ Each algorithm implementation follows an identical rigorous experimental protoco
 ## Repository Structure Details.
 ```
 itp-classification-task/
-├── algorithms/                           # Algorithm implementations.
-│   ├── algorithm-1-fho/                  # Firefly-Harmony Optimization.
-│   ├── algorithm-2-fld/                  # Fisher's Linear Discriminant implementation.
-│   ├── algorithm-3-fofmoa/               # First-Order-Free Multi-Objective Algorithm.
-│   ├── algorithm-4-fuzzy-logic/          # Fuzzy Logic classification system.
-│   └── algorithm-5-gaussian-process/     # Gaussian Process implementation.
-├── datasets/                             # Input data directory.
-├── code-template.ipynb                   # Base implementation template.
-└── README.md                             # This documentation file.
+├── algorithms/                           # Algorithm implementations
+│   ├── algorithm-1-fho/                  # Firefly-Harmony Optimization
+│   │   ├── fho-on-dataset-1/             # FHO applied to student data
+│   │   │   ├── results/                  # Complete evaluation results
+│   │   │   │   ├── confusion_matrices/   # Per-fold confusion visualizations
+│   │   │   │   ├── models/               # Serialized trained models
+│   │   │   │   ├── class_distribution.png  # Class distribution analysis
+│   │   │   │   ├── class_performance.png   # Per-class performance metrics
+│   │   │   │   ├── fitness_history_fold_*.png  # Convergence tracking
+│   │   │   │   ├── metrics.csv           # Comprehensive metrics table
+│   │   │   │   ├── performance_metrics.png  # Comparative metrics visualization
+│   │   │   │   ├── timing_plot.png       # Computational efficiency analysis
+│   │   │   │   └── timing.csv            # Detailed timing measurements
+│   │   │   └── fho-1.ipynb               # Implementation notebook with documentation
+│   │   └── fho-on-dataset-2/             # FHO applied to network traffic data
+│   │       └── ...                       # Similar structure as above
+│   ├── algorithm-2-fld/                  # Fisher's Linear Discriminant implementation
+│   ├── algorithm-3-fofmoa/               # First-Order-Free Multi-Objective Algorithm
+│   ├── algorithm-4-fuzzy-logic/          # Fuzzy Logic classification system
+│   └── algorithm-5-gaussian-process/     # Gaussian Process implementation
+├── datasets/                             # Input data directory
+│   ├── dataset-1.csv                     # Student behavioral data
+│   └── dataset-2.csv                     # Network traffic data
+├── code-template.ipynb                   # Base implementation template
+└── README.md                             # This documentation file
 ```
 
 ## Execution Instructions.
