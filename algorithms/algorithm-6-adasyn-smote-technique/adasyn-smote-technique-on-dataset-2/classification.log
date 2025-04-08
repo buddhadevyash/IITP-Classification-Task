@@ -1,0 +1,893 @@
+2025-04-08 10:17:37,034 - INFO - Starting data processing and model training
+2025-04-08 10:17:37,035 - INFO - Reading dataset from file
+2025-04-08 10:17:39,847 - INFO - Starting data processing and model training
+2025-04-08 10:17:39,847 - INFO - Reading dataset from file
+2025-04-08 10:18:08,222 - INFO - Starting data processing and model training
+2025-04-08 10:18:08,223 - INFO - Reading dataset from file
+2025-04-08 10:18:08,634 - INFO - Original dataset shape: (218805, 47)
+2025-04-08 10:18:08,738 - INFO - Sampled dataset shape: (500, 47)
+2025-04-08 10:18:08,739 - INFO - Class distribution before resampling:
+2025-04-08 10:18:08,740 - INFO - label
+6     74
+14    60
+10    50
+12    49
+13    44
+8     44
+21    37
+9     37
+20    30
+19    18
+1     15
+23     8
+25     6
+4      6
+24     6
+7      5
+27     4
+16     2
+15     2
+31     1
+29     1
+22     1
+Name: count, dtype: int64
+2025-04-08 10:18:08,913 - INFO - Starting model training and evaluation...
+2025-04-08 10:18:08,915 - INFO - 
+===== Processing with resampling method: None =====
+2025-04-08 10:18:08,915 - INFO - Processing classifier: DecisionTree
+2025-04-08 10:18:08,916 - INFO - Processing fold 1 for DecisionTree with None
+2025-04-08 10:18:08,923 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:18:10,666 - INFO - Best parameters for DecisionTree with None on fold 1:
+2025-04-08 10:18:10,670 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:18:11,628 - INFO - Processing fold 2 for DecisionTree with None
+2025-04-08 10:18:11,632 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:18:11,685 - INFO - Best parameters for DecisionTree with None on fold 2:
+2025-04-08 10:18:11,685 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:18:12,678 - INFO - Processing fold 3 for DecisionTree with None
+2025-04-08 10:18:12,682 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:18:12,733 - INFO - Best parameters for DecisionTree with None on fold 3:
+2025-04-08 10:18:12,734 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:18:13,586 - INFO - Processing fold 4 for DecisionTree with None
+2025-04-08 10:18:13,590 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:18:13,662 - INFO - Best parameters for DecisionTree with None on fold 4:
+2025-04-08 10:18:13,663 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:18:14,667 - INFO - Processing fold 5 for DecisionTree with None
+2025-04-08 10:18:14,669 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:18:14,723 - INFO - Best parameters for DecisionTree with None on fold 5:
+2025-04-08 10:18:14,723 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:18:15,528 - INFO - Processing classifier: KNN
+2025-04-08 10:18:15,529 - INFO - Processing fold 1 for KNN with None
+2025-04-08 10:18:15,532 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:18:15,598 - INFO - Best parameters for KNN with None on fold 1:
+2025-04-08 10:18:15,598 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:18:16,458 - INFO - Processing fold 2 for KNN with None
+2025-04-08 10:18:16,461 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:18:16,535 - INFO - Best parameters for KNN with None on fold 2:
+2025-04-08 10:18:16,537 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:18:17,352 - INFO - Processing fold 3 for KNN with None
+2025-04-08 10:18:17,354 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:18:17,404 - INFO - Best parameters for KNN with None on fold 3:
+2025-04-08 10:18:17,404 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:18:18,027 - INFO - Processing fold 4 for KNN with None
+2025-04-08 10:18:18,030 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:18:18,079 - INFO - Best parameters for KNN with None on fold 4:
+2025-04-08 10:18:18,079 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:18:18,875 - INFO - Processing fold 5 for KNN with None
+2025-04-08 10:18:18,878 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:18:18,925 - INFO - Best parameters for KNN with None on fold 5:
+2025-04-08 10:18:18,926 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:18:19,739 - INFO - Processing classifier: LogisticRegression
+2025-04-08 10:18:19,740 - INFO - Processing fold 1 for LogisticRegression with None
+2025-04-08 10:18:19,742 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:18:23,849 - INFO - Best parameters for LogisticRegression with None on fold 1:
+2025-04-08 10:18:23,850 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:18:24,502 - INFO - Processing fold 2 for LogisticRegression with None
+2025-04-08 10:18:24,504 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:18:24,641 - INFO - Best parameters for LogisticRegression with None on fold 2:
+2025-04-08 10:18:24,642 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-08 10:18:25,480 - INFO - Processing fold 3 for LogisticRegression with None
+2025-04-08 10:18:25,482 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:18:30,970 - INFO - Best parameters for LogisticRegression with None on fold 3:
+2025-04-08 10:18:30,972 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:18:31,734 - INFO - Processing fold 4 for LogisticRegression with None
+2025-04-08 10:18:31,736 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:18:35,384 - INFO - Best parameters for LogisticRegression with None on fold 4:
+2025-04-08 10:18:35,386 - INFO - {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:18:36,088 - INFO - Processing fold 5 for LogisticRegression with None
+2025-04-08 10:18:36,090 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:18:43,694 - INFO - Best parameters for LogisticRegression with None on fold 5:
+2025-04-08 10:18:43,697 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:18:44,336 - INFO - Processing classifier: RandomForest
+2025-04-08 10:18:44,337 - INFO - Processing fold 1 for RandomForest with None
+2025-04-08 10:18:44,339 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:18:44,771 - INFO - Best parameters for RandomForest with None on fold 1:
+2025-04-08 10:18:44,771 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:18:45,522 - INFO - Processing fold 2 for RandomForest with None
+2025-04-08 10:18:45,524 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:18:45,954 - INFO - Best parameters for RandomForest with None on fold 2:
+2025-04-08 10:18:45,955 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:18:46,917 - INFO - Processing fold 3 for RandomForest with None
+2025-04-08 10:18:46,919 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:18:47,336 - INFO - Best parameters for RandomForest with None on fold 3:
+2025-04-08 10:18:47,337 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:18:48,060 - INFO - Processing fold 4 for RandomForest with None
+2025-04-08 10:18:48,062 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:18:48,480 - INFO - Best parameters for RandomForest with None on fold 4:
+2025-04-08 10:18:48,480 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:18:49,257 - INFO - Processing fold 5 for RandomForest with None
+2025-04-08 10:18:49,259 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:18:49,646 - INFO - Best parameters for RandomForest with None on fold 5:
+2025-04-08 10:18:49,647 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 50}
+2025-04-08 10:18:50,335 - INFO - Processing classifier: GradientBoosting
+2025-04-08 10:18:50,336 - INFO - Processing fold 1 for GradientBoosting with None
+2025-04-08 10:18:50,338 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:18:52,871 - INFO - Best parameters for GradientBoosting with None on fold 1:
+2025-04-08 10:18:52,872 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}
+2025-04-08 10:18:53,595 - INFO - Processing fold 2 for GradientBoosting with None
+2025-04-08 10:18:53,597 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:18:57,510 - INFO - Best parameters for GradientBoosting with None on fold 2:
+2025-04-08 10:18:57,511 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:18:58,350 - INFO - Processing fold 3 for GradientBoosting with None
+2025-04-08 10:18:58,354 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:19:02,236 - INFO - Best parameters for GradientBoosting with None on fold 3:
+2025-04-08 10:19:02,237 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:19:03,253 - INFO - Processing fold 4 for GradientBoosting with None
+2025-04-08 10:19:03,255 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:19:07,057 - INFO - Best parameters for GradientBoosting with None on fold 4:
+2025-04-08 10:19:07,057 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:19:07,813 - INFO - Processing fold 5 for GradientBoosting with None
+2025-04-08 10:19:07,815 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:19:12,000 - INFO - Best parameters for GradientBoosting with None on fold 5:
+2025-04-08 10:19:12,001 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:19:12,791 - INFO - 
+===== Processing with resampling method: SMOTE =====
+2025-04-08 10:19:12,792 - INFO - Processing classifier: DecisionTree
+2025-04-08 10:19:12,793 - INFO - Processing fold 1 for DecisionTree with SMOTE
+2025-04-08 10:19:12,795 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:19:12,799 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:12,850 - INFO - Best parameters for DecisionTree with SMOTE on fold 1:
+2025-04-08 10:19:12,851 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:19:13,700 - INFO - Processing fold 2 for DecisionTree with SMOTE
+2025-04-08 10:19:13,702 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:19:13,704 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:19:13,757 - INFO - Best parameters for DecisionTree with SMOTE on fold 2:
+2025-04-08 10:19:13,758 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:19:14,561 - INFO - Processing fold 3 for DecisionTree with SMOTE
+2025-04-08 10:19:14,563 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:19:14,565 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:19:14,619 - INFO - Best parameters for DecisionTree with SMOTE on fold 3:
+2025-04-08 10:19:14,620 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:19:15,283 - INFO - Processing fold 4 for DecisionTree with SMOTE
+2025-04-08 10:19:15,286 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:19:15,289 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:15,340 - INFO - Best parameters for DecisionTree with SMOTE on fold 4:
+2025-04-08 10:19:15,340 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:19:16,390 - INFO - Processing fold 5 for DecisionTree with SMOTE
+2025-04-08 10:19:16,392 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:19:16,395 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:16,443 - INFO - Best parameters for DecisionTree with SMOTE on fold 5:
+2025-04-08 10:19:16,443 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:19:17,165 - INFO - Processing classifier: KNN
+2025-04-08 10:19:17,166 - INFO - Processing fold 1 for KNN with SMOTE
+2025-04-08 10:19:17,168 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:19:17,170 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:17,210 - INFO - Best parameters for KNN with SMOTE on fold 1:
+2025-04-08 10:19:17,211 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:19:17,818 - INFO - Processing fold 2 for KNN with SMOTE
+2025-04-08 10:19:17,820 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:19:17,822 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:19:17,870 - INFO - Best parameters for KNN with SMOTE on fold 2:
+2025-04-08 10:19:17,871 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:19:18,515 - INFO - Processing fold 3 for KNN with SMOTE
+2025-04-08 10:19:18,517 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:19:18,520 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:19:18,569 - INFO - Best parameters for KNN with SMOTE on fold 3:
+2025-04-08 10:19:18,570 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:19:19,142 - INFO - Processing fold 4 for KNN with SMOTE
+2025-04-08 10:19:19,144 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:19:19,148 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:19,197 - INFO - Best parameters for KNN with SMOTE on fold 4:
+2025-04-08 10:19:19,197 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:19:19,812 - INFO - Processing fold 5 for KNN with SMOTE
+2025-04-08 10:19:19,814 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:19:19,816 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:19,863 - INFO - Best parameters for KNN with SMOTE on fold 5:
+2025-04-08 10:19:19,864 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:19:20,466 - INFO - Processing classifier: LogisticRegression
+2025-04-08 10:19:20,467 - INFO - Processing fold 1 for LogisticRegression with SMOTE
+2025-04-08 10:19:20,469 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:19:20,471 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:25,316 - INFO - Best parameters for LogisticRegression with SMOTE on fold 1:
+2025-04-08 10:19:25,317 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:19:25,947 - INFO - Processing fold 2 for LogisticRegression with SMOTE
+2025-04-08 10:19:25,950 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:19:25,955 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:19:26,163 - INFO - Best parameters for LogisticRegression with SMOTE on fold 2:
+2025-04-08 10:19:26,163 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-08 10:19:26,802 - INFO - Processing fold 3 for LogisticRegression with SMOTE
+2025-04-08 10:19:26,804 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:19:26,806 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:19:29,683 - INFO - Best parameters for LogisticRegression with SMOTE on fold 3:
+2025-04-08 10:19:29,685 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:19:30,368 - INFO - Processing fold 4 for LogisticRegression with SMOTE
+2025-04-08 10:19:30,370 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:19:30,373 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:33,711 - INFO - Best parameters for LogisticRegression with SMOTE on fold 4:
+2025-04-08 10:19:33,713 - INFO - {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:19:34,445 - INFO - Processing fold 5 for LogisticRegression with SMOTE
+2025-04-08 10:19:34,449 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:19:34,452 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:40,123 - INFO - Best parameters for LogisticRegression with SMOTE on fold 5:
+2025-04-08 10:19:40,127 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:19:41,006 - INFO - Processing classifier: RandomForest
+2025-04-08 10:19:41,007 - INFO - Processing fold 1 for RandomForest with SMOTE
+2025-04-08 10:19:41,009 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:19:41,012 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:41,421 - INFO - Best parameters for RandomForest with SMOTE on fold 1:
+2025-04-08 10:19:41,422 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:19:42,162 - INFO - Processing fold 2 for RandomForest with SMOTE
+2025-04-08 10:19:42,164 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:19:42,171 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:19:42,675 - INFO - Best parameters for RandomForest with SMOTE on fold 2:
+2025-04-08 10:19:42,676 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:19:43,444 - INFO - Processing fold 3 for RandomForest with SMOTE
+2025-04-08 10:19:43,447 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:19:43,450 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:19:43,896 - INFO - Best parameters for RandomForest with SMOTE on fold 3:
+2025-04-08 10:19:43,897 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:19:44,638 - INFO - Processing fold 4 for RandomForest with SMOTE
+2025-04-08 10:19:44,641 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:19:44,644 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:45,086 - INFO - Best parameters for RandomForest with SMOTE on fold 4:
+2025-04-08 10:19:45,087 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:19:45,854 - INFO - Processing fold 5 for RandomForest with SMOTE
+2025-04-08 10:19:45,857 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:19:45,859 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:46,226 - INFO - Best parameters for RandomForest with SMOTE on fold 5:
+2025-04-08 10:19:46,227 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 50}
+2025-04-08 10:19:46,959 - INFO - Processing classifier: GradientBoosting
+2025-04-08 10:19:46,961 - INFO - Processing fold 1 for GradientBoosting with SMOTE
+2025-04-08 10:19:46,963 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:19:46,965 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:19:51,743 - INFO - Best parameters for GradientBoosting with SMOTE on fold 1:
+2025-04-08 10:19:51,743 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}
+2025-04-08 10:19:52,553 - INFO - Processing fold 2 for GradientBoosting with SMOTE
+2025-04-08 10:19:52,555 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:19:52,558 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:19:56,093 - INFO - Best parameters for GradientBoosting with SMOTE on fold 2:
+2025-04-08 10:19:56,093 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:19:56,791 - INFO - Processing fold 3 for GradientBoosting with SMOTE
+2025-04-08 10:19:56,793 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:19:56,796 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:20:00,321 - INFO - Best parameters for GradientBoosting with SMOTE on fold 3:
+2025-04-08 10:20:00,322 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:20:01,102 - INFO - Processing fold 4 for GradientBoosting with SMOTE
+2025-04-08 10:20:01,104 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:20:01,107 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:20:04,732 - INFO - Best parameters for GradientBoosting with SMOTE on fold 4:
+2025-04-08 10:20:04,733 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:20:05,558 - INFO - Processing fold 5 for GradientBoosting with SMOTE
+2025-04-08 10:20:05,560 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:20:05,562 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:20:09,492 - INFO - Best parameters for GradientBoosting with SMOTE on fold 5:
+2025-04-08 10:20:09,492 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:20:10,579 - INFO - 
+===== Processing with resampling method: ADASYN =====
+2025-04-08 10:20:10,580 - INFO - Processing classifier: DecisionTree
+2025-04-08 10:20:10,581 - INFO - Processing fold 1 for DecisionTree with ADASYN
+2025-04-08 10:20:10,584 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:20:10,585 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:10,585 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:10,658 - INFO - Best parameters for DecisionTree with ADASYN on fold 1:
+2025-04-08 10:20:10,658 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:20:11,389 - INFO - Processing fold 2 for DecisionTree with ADASYN
+2025-04-08 10:20:11,391 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:20:11,391 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:11,392 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:11,440 - INFO - Best parameters for DecisionTree with ADASYN on fold 2:
+2025-04-08 10:20:11,441 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:20:12,278 - INFO - Processing fold 3 for DecisionTree with ADASYN
+2025-04-08 10:20:12,280 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:20:12,281 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:12,281 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:12,331 - INFO - Best parameters for DecisionTree with ADASYN on fold 3:
+2025-04-08 10:20:12,331 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:20:13,035 - INFO - Processing fold 4 for DecisionTree with ADASYN
+2025-04-08 10:20:13,037 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:20:13,037 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:13,038 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:13,088 - INFO - Best parameters for DecisionTree with ADASYN on fold 4:
+2025-04-08 10:20:13,089 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:20:13,885 - INFO - Processing fold 5 for DecisionTree with ADASYN
+2025-04-08 10:20:13,887 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:20:13,887 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:13,888 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:13,944 - INFO - Best parameters for DecisionTree with ADASYN on fold 5:
+2025-04-08 10:20:13,945 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:20:14,704 - INFO - Processing classifier: KNN
+2025-04-08 10:20:14,704 - INFO - Processing fold 1 for KNN with ADASYN
+2025-04-08 10:20:14,708 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:20:14,709 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:14,709 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:14,760 - INFO - Best parameters for KNN with ADASYN on fold 1:
+2025-04-08 10:20:14,760 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:20:15,435 - INFO - Processing fold 2 for KNN with ADASYN
+2025-04-08 10:20:15,437 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:20:15,437 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:15,438 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:15,496 - INFO - Best parameters for KNN with ADASYN on fold 2:
+2025-04-08 10:20:15,497 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:20:16,179 - INFO - Processing fold 3 for KNN with ADASYN
+2025-04-08 10:20:16,181 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:20:16,181 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:16,182 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:16,229 - INFO - Best parameters for KNN with ADASYN on fold 3:
+2025-04-08 10:20:16,229 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:20:16,813 - INFO - Processing fold 4 for KNN with ADASYN
+2025-04-08 10:20:16,815 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:20:16,816 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:16,816 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:16,866 - INFO - Best parameters for KNN with ADASYN on fold 4:
+2025-04-08 10:20:16,867 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:20:17,484 - INFO - Processing fold 5 for KNN with ADASYN
+2025-04-08 10:20:17,486 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:20:17,486 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:17,487 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:17,536 - INFO - Best parameters for KNN with ADASYN on fold 5:
+2025-04-08 10:20:17,537 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:20:18,212 - INFO - Processing classifier: LogisticRegression
+2025-04-08 10:20:18,214 - INFO - Processing fold 1 for LogisticRegression with ADASYN
+2025-04-08 10:20:18,217 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:20:18,218 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:18,219 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:23,192 - INFO - Best parameters for LogisticRegression with ADASYN on fold 1:
+2025-04-08 10:20:23,195 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:20:23,866 - INFO - Processing fold 2 for LogisticRegression with ADASYN
+2025-04-08 10:20:23,870 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:20:23,871 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:23,871 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:24,031 - INFO - Best parameters for LogisticRegression with ADASYN on fold 2:
+2025-04-08 10:20:24,032 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-08 10:20:24,728 - INFO - Processing fold 3 for LogisticRegression with ADASYN
+2025-04-08 10:20:24,730 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:20:24,731 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:24,732 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:29,737 - INFO - Best parameters for LogisticRegression with ADASYN on fold 3:
+2025-04-08 10:20:29,741 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:20:30,447 - INFO - Processing fold 4 for LogisticRegression with ADASYN
+2025-04-08 10:20:30,450 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:20:30,450 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:30,451 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:32,944 - INFO - Best parameters for LogisticRegression with ADASYN on fold 4:
+2025-04-08 10:20:32,947 - INFO - {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:20:33,654 - INFO - Processing fold 5 for LogisticRegression with ADASYN
+2025-04-08 10:20:33,657 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:20:33,657 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:33,658 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:39,287 - INFO - Best parameters for LogisticRegression with ADASYN on fold 5:
+2025-04-08 10:20:39,289 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:20:40,614 - INFO - Processing classifier: RandomForest
+2025-04-08 10:20:40,615 - INFO - Processing fold 1 for RandomForest with ADASYN
+2025-04-08 10:20:40,617 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:20:40,618 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:40,618 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:41,052 - INFO - Best parameters for RandomForest with ADASYN on fold 1:
+2025-04-08 10:20:41,053 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:20:41,829 - INFO - Processing fold 2 for RandomForest with ADASYN
+2025-04-08 10:20:41,832 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:20:41,832 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:41,833 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:42,305 - INFO - Best parameters for RandomForest with ADASYN on fold 2:
+2025-04-08 10:20:42,306 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:20:43,086 - INFO - Processing fold 3 for RandomForest with ADASYN
+2025-04-08 10:20:43,088 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:20:43,088 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:43,089 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:43,522 - INFO - Best parameters for RandomForest with ADASYN on fold 3:
+2025-04-08 10:20:43,522 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:20:44,233 - INFO - Processing fold 4 for RandomForest with ADASYN
+2025-04-08 10:20:44,235 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:20:44,236 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:44,236 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:44,701 - INFO - Best parameters for RandomForest with ADASYN on fold 4:
+2025-04-08 10:20:44,702 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:20:45,435 - INFO - Processing fold 5 for RandomForest with ADASYN
+2025-04-08 10:20:45,437 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:20:45,438 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:45,439 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:45,834 - INFO - Best parameters for RandomForest with ADASYN on fold 5:
+2025-04-08 10:20:45,835 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 50}
+2025-04-08 10:20:46,566 - INFO - Processing classifier: GradientBoosting
+2025-04-08 10:20:46,567 - INFO - Processing fold 1 for GradientBoosting with ADASYN
+2025-04-08 10:20:46,569 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:20:46,570 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:46,570 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:49,668 - INFO - Best parameters for GradientBoosting with ADASYN on fold 1:
+2025-04-08 10:20:49,669 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}
+2025-04-08 10:20:50,423 - INFO - Processing fold 2 for GradientBoosting with ADASYN
+2025-04-08 10:20:50,425 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:20:50,426 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:50,427 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:54,331 - INFO - Best parameters for GradientBoosting with ADASYN on fold 2:
+2025-04-08 10:20:54,331 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:20:55,110 - INFO - Processing fold 3 for GradientBoosting with ADASYN
+2025-04-08 10:20:55,114 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:20:55,115 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:55,116 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:20:59,154 - INFO - Best parameters for GradientBoosting with ADASYN on fold 3:
+2025-04-08 10:20:59,155 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:20:59,829 - INFO - Processing fold 4 for GradientBoosting with ADASYN
+2025-04-08 10:20:59,831 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:20:59,832 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:20:59,833 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:21:03,366 - INFO - Best parameters for GradientBoosting with ADASYN on fold 4:
+2025-04-08 10:21:03,367 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:21:04,158 - INFO - Processing fold 5 for GradientBoosting with ADASYN
+2025-04-08 10:21:04,160 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:21:04,161 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:21:04,161 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:21:08,120 - INFO - Best parameters for GradientBoosting with ADASYN on fold 5:
+2025-04-08 10:21:08,120 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:21:08,829 - INFO - 
+Resampling results saved to resampling_evaluation/resampling_results.csv
+2025-04-08 10:21:08,832 - INFO - 
+Timing results saved to timing_results.csv
+2025-04-08 10:21:08,835 - INFO - 
+Classification Metrics Across Resampling Methods and Folds:
+2025-04-08 10:56:33,105 - INFO - Starting data processing and model training
+2025-04-08 10:56:33,106 - INFO - Reading dataset from file
+2025-04-08 10:56:33,625 - INFO - Original dataset shape: (218805, 47)
+2025-04-08 10:56:33,773 - INFO - Sampled dataset shape: (500, 47)
+2025-04-08 10:56:33,774 - INFO - Class distribution before resampling:
+2025-04-08 10:56:33,775 - INFO - label
+6     74
+14    60
+10    50
+12    49
+13    44
+8     44
+21    37
+9     37
+20    30
+19    18
+1     15
+23     8
+25     6
+4      6
+24     6
+7      5
+27     4
+16     2
+15     2
+31     1
+29     1
+22     1
+Name: count, dtype: int64
+2025-04-08 10:56:33,964 - INFO - Starting model training and evaluation...
+2025-04-08 10:56:33,965 - INFO - 
+===== Processing with resampling method: None =====
+2025-04-08 10:56:33,966 - INFO - Processing classifier: DecisionTree
+2025-04-08 10:56:33,967 - INFO - Processing fold 1 for DecisionTree with None
+2025-04-08 10:56:33,970 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:56:36,420 - INFO - Best parameters for DecisionTree with None on fold 1:
+2025-04-08 10:56:36,423 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:56:39,321 - INFO - Processing fold 2 for DecisionTree with None
+2025-04-08 10:56:39,325 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:56:39,404 - INFO - Best parameters for DecisionTree with None on fold 2:
+2025-04-08 10:56:39,404 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:56:40,301 - INFO - Processing fold 3 for DecisionTree with None
+2025-04-08 10:56:40,304 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:56:40,368 - INFO - Best parameters for DecisionTree with None on fold 3:
+2025-04-08 10:56:40,369 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:56:41,129 - INFO - Processing fold 4 for DecisionTree with None
+2025-04-08 10:56:41,131 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:56:41,233 - INFO - Best parameters for DecisionTree with None on fold 4:
+2025-04-08 10:56:41,234 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:56:42,365 - INFO - Processing fold 5 for DecisionTree with None
+2025-04-08 10:56:42,368 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:56:42,430 - INFO - Best parameters for DecisionTree with None on fold 5:
+2025-04-08 10:56:42,431 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:56:43,246 - INFO - Processing classifier: KNN
+2025-04-08 10:56:43,248 - INFO - Processing fold 1 for KNN with None
+2025-04-08 10:56:43,250 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:56:43,321 - INFO - Best parameters for KNN with None on fold 1:
+2025-04-08 10:56:43,321 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:56:44,153 - INFO - Processing fold 2 for KNN with None
+2025-04-08 10:56:44,156 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:56:44,207 - INFO - Best parameters for KNN with None on fold 2:
+2025-04-08 10:56:44,208 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:56:44,962 - INFO - Processing fold 3 for KNN with None
+2025-04-08 10:56:44,966 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:56:45,042 - INFO - Best parameters for KNN with None on fold 3:
+2025-04-08 10:56:45,042 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:56:45,666 - INFO - Processing fold 4 for KNN with None
+2025-04-08 10:56:45,668 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:56:45,763 - INFO - Best parameters for KNN with None on fold 4:
+2025-04-08 10:56:45,763 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:56:46,668 - INFO - Processing fold 5 for KNN with None
+2025-04-08 10:56:46,670 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:56:46,746 - INFO - Best parameters for KNN with None on fold 5:
+2025-04-08 10:56:46,747 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:56:47,422 - INFO - Processing classifier: LogisticRegression
+2025-04-08 10:56:47,423 - INFO - Processing fold 1 for LogisticRegression with None
+2025-04-08 10:56:47,425 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:56:53,531 - INFO - Best parameters for LogisticRegression with None on fold 1:
+2025-04-08 10:56:53,534 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:56:54,250 - INFO - Processing fold 2 for LogisticRegression with None
+2025-04-08 10:56:54,254 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:56:54,422 - INFO - Best parameters for LogisticRegression with None on fold 2:
+2025-04-08 10:56:54,422 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-08 10:56:55,157 - INFO - Processing fold 3 for LogisticRegression with None
+2025-04-08 10:56:55,159 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:57:00,127 - INFO - Best parameters for LogisticRegression with None on fold 3:
+2025-04-08 10:57:00,130 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:57:00,880 - INFO - Processing fold 4 for LogisticRegression with None
+2025-04-08 10:57:00,883 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:57:04,138 - INFO - Best parameters for LogisticRegression with None on fold 4:
+2025-04-08 10:57:04,139 - INFO - {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:57:04,878 - INFO - Processing fold 5 for LogisticRegression with None
+2025-04-08 10:57:04,881 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:57:11,765 - INFO - Best parameters for LogisticRegression with None on fold 5:
+2025-04-08 10:57:11,767 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:57:12,480 - INFO - Processing classifier: RandomForest
+2025-04-08 10:57:12,482 - INFO - Processing fold 1 for RandomForest with None
+2025-04-08 10:57:12,484 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:57:13,019 - INFO - Best parameters for RandomForest with None on fold 1:
+2025-04-08 10:57:13,020 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:57:14,141 - INFO - Processing fold 2 for RandomForest with None
+2025-04-08 10:57:14,144 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:57:14,621 - INFO - Best parameters for RandomForest with None on fold 2:
+2025-04-08 10:57:14,622 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:57:15,593 - INFO - Processing fold 3 for RandomForest with None
+2025-04-08 10:57:15,594 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:57:16,084 - INFO - Best parameters for RandomForest with None on fold 3:
+2025-04-08 10:57:16,085 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:57:16,891 - INFO - Processing fold 4 for RandomForest with None
+2025-04-08 10:57:16,894 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:57:17,463 - INFO - Best parameters for RandomForest with None on fold 4:
+2025-04-08 10:57:17,464 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:57:18,313 - INFO - Processing fold 5 for RandomForest with None
+2025-04-08 10:57:18,317 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:57:18,781 - INFO - Best parameters for RandomForest with None on fold 5:
+2025-04-08 10:57:18,781 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 50}
+2025-04-08 10:57:19,540 - INFO - Processing classifier: GradientBoosting
+2025-04-08 10:57:19,541 - INFO - Processing fold 1 for GradientBoosting with None
+2025-04-08 10:57:19,544 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:57:22,868 - INFO - Best parameters for GradientBoosting with None on fold 1:
+2025-04-08 10:57:22,869 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}
+2025-04-08 10:57:23,742 - INFO - Processing fold 2 for GradientBoosting with None
+2025-04-08 10:57:23,745 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:57:28,134 - INFO - Best parameters for GradientBoosting with None on fold 2:
+2025-04-08 10:57:28,135 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:57:29,438 - INFO - Processing fold 3 for GradientBoosting with None
+2025-04-08 10:57:29,441 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:57:33,786 - INFO - Best parameters for GradientBoosting with None on fold 3:
+2025-04-08 10:57:33,787 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:57:34,511 - INFO - Processing fold 4 for GradientBoosting with None
+2025-04-08 10:57:34,514 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:57:38,729 - INFO - Best parameters for GradientBoosting with None on fold 4:
+2025-04-08 10:57:38,730 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:57:39,631 - INFO - Processing fold 5 for GradientBoosting with None
+2025-04-08 10:57:39,634 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:57:44,561 - INFO - Best parameters for GradientBoosting with None on fold 5:
+2025-04-08 10:57:44,562 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:57:45,328 - INFO - 
+===== Processing with resampling method: SMOTE =====
+2025-04-08 10:57:45,328 - INFO - Processing classifier: DecisionTree
+2025-04-08 10:57:45,330 - INFO - Processing fold 1 for DecisionTree with SMOTE
+2025-04-08 10:57:45,332 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:57:45,335 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:57:45,398 - INFO - Best parameters for DecisionTree with SMOTE on fold 1:
+2025-04-08 10:57:45,399 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:57:46,202 - INFO - Processing fold 2 for DecisionTree with SMOTE
+2025-04-08 10:57:46,205 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:57:46,208 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:57:46,270 - INFO - Best parameters for DecisionTree with SMOTE on fold 2:
+2025-04-08 10:57:46,271 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:57:47,258 - INFO - Processing fold 3 for DecisionTree with SMOTE
+2025-04-08 10:57:47,262 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:57:47,288 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:57:47,351 - INFO - Best parameters for DecisionTree with SMOTE on fold 3:
+2025-04-08 10:57:47,352 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:57:48,155 - INFO - Processing fold 4 for DecisionTree with SMOTE
+2025-04-08 10:57:48,162 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:57:48,185 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:57:48,265 - INFO - Best parameters for DecisionTree with SMOTE on fold 4:
+2025-04-08 10:57:48,265 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:57:49,098 - INFO - Processing fold 5 for DecisionTree with SMOTE
+2025-04-08 10:57:49,101 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:57:49,104 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:57:49,166 - INFO - Best parameters for DecisionTree with SMOTE on fold 5:
+2025-04-08 10:57:49,167 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:57:50,418 - INFO - Processing classifier: KNN
+2025-04-08 10:57:50,419 - INFO - Processing fold 1 for KNN with SMOTE
+2025-04-08 10:57:50,422 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:57:50,425 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:57:50,475 - INFO - Best parameters for KNN with SMOTE on fold 1:
+2025-04-08 10:57:50,475 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:57:51,137 - INFO - Processing fold 2 for KNN with SMOTE
+2025-04-08 10:57:51,140 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:57:51,142 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:57:51,191 - INFO - Best parameters for KNN with SMOTE on fold 2:
+2025-04-08 10:57:51,191 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:57:51,910 - INFO - Processing fold 3 for KNN with SMOTE
+2025-04-08 10:57:51,913 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:57:51,916 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:57:51,976 - INFO - Best parameters for KNN with SMOTE on fold 3:
+2025-04-08 10:57:51,977 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:57:52,573 - INFO - Processing fold 4 for KNN with SMOTE
+2025-04-08 10:57:52,575 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:57:52,578 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:57:52,625 - INFO - Best parameters for KNN with SMOTE on fold 4:
+2025-04-08 10:57:52,625 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:57:53,310 - INFO - Processing fold 5 for KNN with SMOTE
+2025-04-08 10:57:53,312 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:57:53,319 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:57:53,399 - INFO - Best parameters for KNN with SMOTE on fold 5:
+2025-04-08 10:57:53,400 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:57:54,048 - INFO - Processing classifier: LogisticRegression
+2025-04-08 10:57:54,049 - INFO - Processing fold 1 for LogisticRegression with SMOTE
+2025-04-08 10:57:54,051 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:57:54,054 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:57:58,380 - INFO - Best parameters for LogisticRegression with SMOTE on fold 1:
+2025-04-08 10:57:58,383 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:57:59,054 - INFO - Processing fold 2 for LogisticRegression with SMOTE
+2025-04-08 10:57:59,056 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:57:59,059 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:57:59,230 - INFO - Best parameters for LogisticRegression with SMOTE on fold 2:
+2025-04-08 10:57:59,231 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-08 10:57:59,884 - INFO - Processing fold 3 for LogisticRegression with SMOTE
+2025-04-08 10:57:59,887 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:57:59,889 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:58:05,439 - INFO - Best parameters for LogisticRegression with SMOTE on fold 3:
+2025-04-08 10:58:05,442 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:58:06,131 - INFO - Processing fold 4 for LogisticRegression with SMOTE
+2025-04-08 10:58:06,133 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:58:06,136 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:58:09,136 - INFO - Best parameters for LogisticRegression with SMOTE on fold 4:
+2025-04-08 10:58:09,139 - INFO - {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:58:09,877 - INFO - Processing fold 5 for LogisticRegression with SMOTE
+2025-04-08 10:58:09,879 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:58:09,882 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:58:17,982 - INFO - Best parameters for LogisticRegression with SMOTE on fold 5:
+2025-04-08 10:58:17,983 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:58:18,702 - INFO - Processing classifier: RandomForest
+2025-04-08 10:58:18,703 - INFO - Processing fold 1 for RandomForest with SMOTE
+2025-04-08 10:58:18,705 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:58:18,707 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:58:19,146 - INFO - Best parameters for RandomForest with SMOTE on fold 1:
+2025-04-08 10:58:19,146 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:58:19,907 - INFO - Processing fold 2 for RandomForest with SMOTE
+2025-04-08 10:58:19,910 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:58:19,912 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:58:20,344 - INFO - Best parameters for RandomForest with SMOTE on fold 2:
+2025-04-08 10:58:20,345 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:58:21,600 - INFO - Processing fold 3 for RandomForest with SMOTE
+2025-04-08 10:58:21,602 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:58:21,605 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:58:22,059 - INFO - Best parameters for RandomForest with SMOTE on fold 3:
+2025-04-08 10:58:22,060 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:58:22,800 - INFO - Processing fold 4 for RandomForest with SMOTE
+2025-04-08 10:58:22,802 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:58:22,804 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:58:23,237 - INFO - Best parameters for RandomForest with SMOTE on fold 4:
+2025-04-08 10:58:23,238 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:58:23,978 - INFO - Processing fold 5 for RandomForest with SMOTE
+2025-04-08 10:58:23,981 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:58:23,983 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:58:24,375 - INFO - Best parameters for RandomForest with SMOTE on fold 5:
+2025-04-08 10:58:24,375 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 50}
+2025-04-08 10:58:25,078 - INFO - Processing classifier: GradientBoosting
+2025-04-08 10:58:25,080 - INFO - Processing fold 1 for GradientBoosting with SMOTE
+2025-04-08 10:58:25,082 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:58:25,084 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:58:27,923 - INFO - Best parameters for GradientBoosting with SMOTE on fold 1:
+2025-04-08 10:58:27,924 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}
+2025-04-08 10:58:28,682 - INFO - Processing fold 2 for GradientBoosting with SMOTE
+2025-04-08 10:58:28,684 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:58:28,687 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 3, n_samples = 3. Using original data.
+2025-04-08 10:58:32,715 - INFO - Best parameters for GradientBoosting with SMOTE on fold 2:
+2025-04-08 10:58:32,715 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:58:33,610 - INFO - Processing fold 3 for GradientBoosting with SMOTE
+2025-04-08 10:58:33,612 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:58:33,616 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 4, n_samples = 4. Using original data.
+2025-04-08 10:58:37,574 - INFO - Best parameters for GradientBoosting with SMOTE on fold 3:
+2025-04-08 10:58:37,575 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:58:38,317 - INFO - Processing fold 4 for GradientBoosting with SMOTE
+2025-04-08 10:58:38,320 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:58:38,324 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:58:42,461 - INFO - Best parameters for GradientBoosting with SMOTE on fold 4:
+2025-04-08 10:58:42,462 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:58:43,237 - INFO - Processing fold 5 for GradientBoosting with SMOTE
+2025-04-08 10:58:43,241 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:58:43,245 - ERROR - Resampling failed: Expected n_neighbors <= n_samples_fit, but n_neighbors = 6, n_samples_fit = 5, n_samples = 5. Using original data.
+2025-04-08 10:58:46,992 - INFO - Best parameters for GradientBoosting with SMOTE on fold 5:
+2025-04-08 10:58:46,993 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:58:47,686 - INFO - 
+===== Processing with resampling method: ADASYN =====
+2025-04-08 10:58:47,687 - INFO - Processing classifier: DecisionTree
+2025-04-08 10:58:47,688 - INFO - Processing fold 1 for DecisionTree with ADASYN
+2025-04-08 10:58:47,690 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:58:47,691 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:47,691 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:47,741 - INFO - Best parameters for DecisionTree with ADASYN on fold 1:
+2025-04-08 10:58:47,741 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:58:48,469 - INFO - Processing fold 2 for DecisionTree with ADASYN
+2025-04-08 10:58:48,471 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:58:48,472 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:48,472 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:48,536 - INFO - Best parameters for DecisionTree with ADASYN on fold 2:
+2025-04-08 10:58:48,537 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:58:49,340 - INFO - Processing fold 3 for DecisionTree with ADASYN
+2025-04-08 10:58:49,343 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:58:49,344 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:49,345 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:49,399 - INFO - Best parameters for DecisionTree with ADASYN on fold 3:
+2025-04-08 10:58:49,399 - INFO - {'criterion': 'entropy', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:58:50,123 - INFO - Processing fold 4 for DecisionTree with ADASYN
+2025-04-08 10:58:50,125 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:58:50,125 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:50,126 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:50,175 - INFO - Best parameters for DecisionTree with ADASYN on fold 4:
+2025-04-08 10:58:50,176 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 2}
+2025-04-08 10:58:51,541 - INFO - Processing fold 5 for DecisionTree with ADASYN
+2025-04-08 10:58:51,543 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:58:51,543 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:51,544 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:51,617 - INFO - Best parameters for DecisionTree with ADASYN on fold 5:
+2025-04-08 10:58:51,618 - INFO - {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 5}
+2025-04-08 10:58:52,433 - INFO - Processing classifier: KNN
+2025-04-08 10:58:52,434 - INFO - Processing fold 1 for KNN with ADASYN
+2025-04-08 10:58:52,437 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:58:52,438 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:52,439 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:52,504 - INFO - Best parameters for KNN with ADASYN on fold 1:
+2025-04-08 10:58:52,505 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:58:53,134 - INFO - Processing fold 2 for KNN with ADASYN
+2025-04-08 10:58:53,137 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:58:53,137 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:53,138 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:53,191 - INFO - Best parameters for KNN with ADASYN on fold 2:
+2025-04-08 10:58:53,191 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:58:53,880 - INFO - Processing fold 3 for KNN with ADASYN
+2025-04-08 10:58:53,883 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:58:53,884 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:53,884 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:53,934 - INFO - Best parameters for KNN with ADASYN on fold 3:
+2025-04-08 10:58:53,935 - INFO - {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:58:54,527 - INFO - Processing fold 4 for KNN with ADASYN
+2025-04-08 10:58:54,529 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:58:54,530 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:54,531 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:54,590 - INFO - Best parameters for KNN with ADASYN on fold 4:
+2025-04-08 10:58:54,590 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:58:55,178 - INFO - Processing fold 5 for KNN with ADASYN
+2025-04-08 10:58:55,180 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:58:55,181 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:55,182 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:58:55,229 - INFO - Best parameters for KNN with ADASYN on fold 5:
+2025-04-08 10:58:55,230 - INFO - {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'distance'}
+2025-04-08 10:58:55,869 - INFO - Processing classifier: LogisticRegression
+2025-04-08 10:58:55,870 - INFO - Processing fold 1 for LogisticRegression with ADASYN
+2025-04-08 10:58:55,872 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:58:55,872 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:58:55,873 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:01,103 - INFO - Best parameters for LogisticRegression with ADASYN on fold 1:
+2025-04-08 10:59:01,105 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:59:01,734 - INFO - Processing fold 2 for LogisticRegression with ADASYN
+2025-04-08 10:59:01,736 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:59:01,737 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:01,738 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:01,886 - INFO - Best parameters for LogisticRegression with ADASYN on fold 2:
+2025-04-08 10:59:01,887 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-08 10:59:02,556 - INFO - Processing fold 3 for LogisticRegression with ADASYN
+2025-04-08 10:59:02,558 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:59:02,558 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:02,559 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:07,905 - INFO - Best parameters for LogisticRegression with ADASYN on fold 3:
+2025-04-08 10:59:07,909 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:59:08,637 - INFO - Processing fold 4 for LogisticRegression with ADASYN
+2025-04-08 10:59:08,640 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:59:08,640 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:08,641 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:11,706 - INFO - Best parameters for LogisticRegression with ADASYN on fold 4:
+2025-04-08 10:59:11,707 - INFO - {'C': 1, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:59:12,411 - INFO - Processing fold 5 for LogisticRegression with ADASYN
+2025-04-08 10:59:12,413 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:59:12,414 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:12,414 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:18,710 - INFO - Best parameters for LogisticRegression with ADASYN on fold 5:
+2025-04-08 10:59:18,712 - INFO - {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-08 10:59:19,371 - INFO - Processing classifier: RandomForest
+2025-04-08 10:59:19,372 - INFO - Processing fold 1 for RandomForest with ADASYN
+2025-04-08 10:59:19,374 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:59:19,375 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:19,375 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:19,808 - INFO - Best parameters for RandomForest with ADASYN on fold 1:
+2025-04-08 10:59:19,809 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:59:20,571 - INFO - Processing fold 2 for RandomForest with ADASYN
+2025-04-08 10:59:20,574 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:59:20,574 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:20,575 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:21,006 - INFO - Best parameters for RandomForest with ADASYN on fold 2:
+2025-04-08 10:59:21,006 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:59:21,784 - INFO - Processing fold 3 for RandomForest with ADASYN
+2025-04-08 10:59:21,787 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:59:21,788 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:21,789 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:22,285 - INFO - Best parameters for RandomForest with ADASYN on fold 3:
+2025-04-08 10:59:22,286 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:59:22,998 - INFO - Processing fold 4 for RandomForest with ADASYN
+2025-04-08 10:59:23,001 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:59:23,001 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:23,002 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:23,423 - INFO - Best parameters for RandomForest with ADASYN on fold 4:
+2025-04-08 10:59:23,424 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:59:24,149 - INFO - Processing fold 5 for RandomForest with ADASYN
+2025-04-08 10:59:24,151 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:59:24,152 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:24,152 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:24,546 - INFO - Best parameters for RandomForest with ADASYN on fold 5:
+2025-04-08 10:59:24,547 - INFO - {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 50}
+2025-04-08 10:59:25,307 - INFO - Processing classifier: GradientBoosting
+2025-04-08 10:59:25,308 - INFO - Processing fold 1 for GradientBoosting with ADASYN
+2025-04-08 10:59:25,310 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 66, 7: 5, 8: 31, 9: 29, 10: 40, 12: 36, 13: 34, 14: 48, 16: 2, 19: 16, 20: 23, 21: 29, 22: 1, 23: 6, 24: 5, 25: 6, 27: 4, 31: 1}
+2025-04-08 10:59:25,310 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:25,311 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:27,842 - INFO - Best parameters for GradientBoosting with ADASYN on fold 1:
+2025-04-08 10:59:27,843 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50}
+2025-04-08 10:59:29,081 - INFO - Processing fold 2 for GradientBoosting with ADASYN
+2025-04-08 10:59:29,084 - INFO - Original training set class distribution: {1: 8, 4: 3, 6: 55, 7: 4, 8: 37, 9: 31, 10: 41, 12: 42, 13: 37, 14: 49, 15: 2, 16: 2, 19: 14, 20: 23, 21: 29, 22: 1, 23: 8, 24: 3, 25: 6, 27: 4, 29: 1}
+2025-04-08 10:59:29,084 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:29,085 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:32,697 - INFO - Best parameters for GradientBoosting with ADASYN on fold 2:
+2025-04-08 10:59:32,697 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:59:33,398 - INFO - Processing fold 3 for GradientBoosting with ADASYN
+2025-04-08 10:59:33,400 - INFO - Original training set class distribution: {1: 13, 4: 6, 6: 59, 7: 4, 8: 34, 9: 30, 10: 41, 12: 39, 13: 34, 14: 47, 15: 2, 16: 2, 19: 15, 20: 23, 21: 30, 23: 5, 24: 5, 25: 5, 27: 4, 29: 1, 31: 1}
+2025-04-08 10:59:33,401 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:33,401 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:36,811 - INFO - Best parameters for GradientBoosting with ADASYN on fold 3:
+2025-04-08 10:59:36,812 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:59:37,492 - INFO - Processing fold 4 for GradientBoosting with ADASYN
+2025-04-08 10:59:37,495 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 59, 7: 2, 8: 37, 9: 30, 10: 42, 12: 37, 13: 36, 14: 46, 15: 2, 16: 1, 19: 12, 20: 27, 21: 33, 22: 1, 23: 5, 24: 6, 25: 3, 27: 1, 29: 1, 31: 1}
+2025-04-08 10:59:37,495 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:37,496 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:41,146 - INFO - Best parameters for GradientBoosting with ADASYN on fold 4:
+2025-04-08 10:59:41,147 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:59:41,874 - INFO - Processing fold 5 for GradientBoosting with ADASYN
+2025-04-08 10:59:41,876 - INFO - Original training set class distribution: {1: 13, 4: 5, 6: 57, 7: 5, 8: 37, 9: 28, 10: 36, 12: 42, 13: 35, 14: 50, 15: 2, 16: 1, 19: 15, 20: 24, 21: 27, 22: 1, 23: 8, 24: 5, 25: 4, 27: 3, 29: 1, 31: 1}
+2025-04-08 10:59:41,877 - INFO - Using SMOTE instead of ADASYN due to insufficient samples (min: 1)
+2025-04-08 10:59:41,877 - ERROR - Resampling failed: The 'k_neighbors' parameter of SMOTE must be an int in the range [1, inf) or an object implementing 'kneighbors' and 'kneighbors_graph'. Got 0 instead.. Using original data.
+2025-04-08 10:59:45,593 - INFO - Best parameters for GradientBoosting with ADASYN on fold 5:
+2025-04-08 10:59:45,594 - INFO - {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}
+2025-04-08 10:59:46,482 - INFO - 
+Resampling results saved to resampling_evaluation/resampling_results.csv
+2025-04-08 10:59:46,485 - INFO - 
+Timing results saved to timing_results.csv
+2025-04-08 10:59:46,491 - INFO - 
+Classification Metrics Across Resampling Methods and Folds:
+2025-04-08 10:59:46,499 - INFO -                                  Accuracy  F1 Score  Balanced Accuracy
+Resampling   Classifier                                               
+None         DecisionTree           0.940  0.937609           0.836813
+             GradientBoosting       0.942  0.933666           0.822061
+             KNN                    0.848  0.842491           0.758135
+             LogisticRegression     0.752  0.721528           0.603694
+             RandomForest           0.946  0.941172           0.856425
+None (Error) DecisionTree           0.940  0.937609           0.836813
+             GradientBoosting       0.942  0.933666           0.822061
+             KNN                    0.848  0.842491           0.758135
+             LogisticRegression     0.752  0.721528           0.603694
+             RandomForest           0.946  0.941172           0.856425
+2025-04-08 10:59:46,511 - INFO - 
+Metrics results saved to metrics_results.csv
+2025-04-08 10:59:46,518 - INFO - 
+Best Model Combination:
+2025-04-08 10:59:46,519 - INFO - Resampling: None
+2025-04-08 10:59:46,519 - INFO - Classifier: RandomForest
+2025-04-08 10:59:46,520 - INFO - Balanced Accuracy: 0.9167
+2025-04-08 10:59:46,521 - INFO - F1 Score: 0.9767
+2025-04-08 10:59:46,521 - INFO - Parameters: {'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-08 10:59:46,539 - INFO - 
+Summary metrics saved to summary_metrics.csv
+2025-04-08 10:59:47,211 - INFO - 
+Analysis complete! Check CSV files and visualizations for detailed results.
