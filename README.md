@@ -30,6 +30,11 @@ Probabilistic classification leveraging Gaussian Process priors with custom kern
 ### Algorithm Architecture:<br>
 <img src="https://pub.mdpi-res.com/energies/energies-11-00935/article_deploy/html/images/energies-11-00935-g001.png?1570020711" width="700">
 
+### 6. Adasyn Smote Technique
+ADASYN (Adaptive Synthetic Sampling) and SMOTE (Synthetic Minority Over-sampling Technique) are specialized resampling approaches that address class imbalance by generating synthetic samples in the feature space. These techniques improve classifier performance on minority classes by creating balanced training distributions while preserving decision boundaries. <br>
+### Algorithm Architecture:<br>
+<img src="https://www.mdpi.com/applsci/applsci-13-06504/article_deploy/html/images/applsci-13-06504-g001.png" width="700">
+
 ## Dataset Specifications
 
 ### Dataset-1 (Student Data)
